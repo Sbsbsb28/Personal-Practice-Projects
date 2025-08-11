@@ -1,0 +1,57 @@
+print("Welcome to Homestuck text")
+print("Enter in any word or scentence to convert to some different troll text quirks")
+
+
+def get_word():
+    text = input("Convert: ")
+    text = text.upper()
+
+    #Aradia
+    print("")
+    aradia_text = ""
+    for c in text:
+        if c == "O":
+            c = "0"
+        aradia_text += c
+    print("Aradia: " + aradia_text)
+
+    #Sollux
+    sollux_text = ""
+    for c in text:
+        if c == "S":
+            c = "2"
+        if c == "I":
+            c = "ii"
+        sollux_text += c
+    print("Sollux: " + sollux_text)
+
+    #Terezi
+    terezi_text = ""
+    for c in text:
+        if c == "E":
+            c = "3"
+        if c == "A":
+            c = "4"
+        terezi_text += c
+    print("Terezi: " + terezi_text)
+
+    #Eridan
+    eridan_text = ""
+    for c in text:
+        if c == "W":
+            c = "WW"
+        eridan_text += c
+    print("Eridan: " + eridan_text)
+
+    #Feferi
+    feferi_text = ""
+    for c in text:
+        if c == "H":
+            c = ")("
+        if c == "B":
+            c = "8"
+        feferi_text += c
+    print("Feferi: " + feferi_text)    
+
+
+get_word()
