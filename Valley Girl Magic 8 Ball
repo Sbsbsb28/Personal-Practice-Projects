@@ -1,0 +1,39 @@
+from random import randint
+
+reply = [
+    "Totally!",
+    "As if!",
+    "Fer shur!",
+    "Keep dreaming!",
+    "Like gage me with a spoon, No way!",
+    "That's so bogus",
+    "Uh, it's possible?",
+    "um like, I think so?",
+    "Grody, ask me later"
+]
+
+def shake_ball():
+    print("")
+    print("You're like totally playing Magic 8 Ball! **Valley Girl edition!**")
+    question = input("like totally ask me a question!: ")
+    print(reply[randint(0, len(reply))])
+    play_again()
+
+def shake_again():
+    question_again = input("Awesome, hit me up with another question!: ")
+    print(reply[randint(0, len(reply))])
+    play_again()
+
+
+def play_again():
+    keep_playing = input("wanna keep going? (Y/N) ")
+    if keep_playing == "Y" or keep_playing == "y":
+        print("")
+        shake_again()
+    elif keep_playing == "N" or keep_playing == "n":
+        print("Whatever, bye")
+        quit()
+    else:
+        print("Umm, like, what as that?")
+
+shake_ball()
